@@ -1,0 +1,1 @@
+typeSearchIndex = [{"p":"com.company.mod1.domein","l":"Account"},{"l":"All Classes","u":"allclasses-index.html"},{"p":"com.company.mod1.test","l":"TestAccount"}];updateSearchResults();

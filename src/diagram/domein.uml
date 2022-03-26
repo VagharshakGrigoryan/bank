@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.company.mod1.domein</OriginalElement>
+  <nodes>
+    <node x="471.0" y="273.0">com.company.mod1.domein.SavingsAccount</node>
+    <node x="0.0" y="502.0">com.company.mod1.domein.Bank</node>
+    <node x="219.0" y="273.0">com.company.mod1.domein.CheckingAccount</node>
+    <node x="7.0" y="218.0">com.company.mod1.domein.Customer</node>
+    <node x="39.0" y="0.0">com.company.mod1.domein.Account</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.company.mod1.domein.Bank" target="com.company.mod1.domein.Customer" relationship="CREATE">
+      <point x="51.5" y="-73.0" />
+      <point x="154.5" y="477.0" />
+      <point x="151.0" y="477.0" />
+      <point x="48.0" y="117.0" />
+    </edge>
+    <edge source="com.company.mod1.domein.Customer" target="com.company.mod1.domein.Account" relationship="CREATE">
+      <point x="-48.0" y="-117.0" />
+      <point x="55.0" y="198.0" />
+      <point x="71.0" y="198.0" />
+      <point x="-64.0" y="84.0" />
+    </edge>
+    <edge source="com.company.mod1.domein.SavingsAccount" target="com.company.mod1.domein.Account" relationship="GENERALIZATION">
+      <point x="0.0" y="-62.0" />
+      <point x="583.0" y="198.0" />
+      <point x="443.3" y="198.0" />
+      <point x="443.3" y="188.0" />
+      <point x="199.0" y="188.0" />
+      <point x="64.0" y="84.0" />
+    </edge>
+    <edge source="com.company.mod1.domein.Bank" target="com.company.mod1.domein.Customer" relationship="TO_MANY">
+      <point x="-51.5" y="-73.0" />
+      <point x="51.5" y="477.0" />
+      <point x="55.0" y="477.0" />
+      <point x="-48.0" y="117.0" />
+    </edge>
+    <edge source="com.company.mod1.domein.Customer" target="com.company.mod1.domein.Account" relationship="TO_MANY">
+      <point x="48.0" y="-117.0" />
+      <point x="151.0" y="198.0" />
+      <point x="135.0" y="198.0" />
+      <point x="0.0" y="84.0" />
+    </edge>
+    <edge source="com.company.mod1.domein.CheckingAccount" target="com.company.mod1.domein.Account" relationship="GENERALIZATION">
+      <point x="0.0" y="-62.0" />
+      <point x="335.0" y="198.0" />
+      <point x="443.3" y="198.0" />
+      <point x="443.3" y="188.0" />
+      <point x="199.0" y="188.0" />
+      <point x="64.0" y="84.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.85" showDependencies="true" x="431.5" y="331.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Inner Classes</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
