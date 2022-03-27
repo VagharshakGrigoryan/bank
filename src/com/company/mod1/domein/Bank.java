@@ -1,23 +1,26 @@
 package com.company.mod1.domein;
 
 public class Bank {
-    private final Customer[] customer;
-    private int numOfClients;
+    private static final Customer[] customer =  new Customer[1000];
+    private static int numOfClients =0;
 
-    public Bank() {
-        customer = new Customer[1000];
-        numOfClients = 0;
+    private Bank() {
+
     }
 
-    public Customer getCustomer(int customerNumber) {
+    public static Customer getCustomer(int customerNumber) {
         if (customerNumber < customer.length) {
             return customer[customerNumber];
         }
         return null;
     }
 
-    public void addCustomer(Customer newCustomer) {
+    public static void addCustomer(Customer newCustomer) {
         customer[numOfClients] = newCustomer;
         numOfClients++;
+    }
+
+    public static int getNumOfClients() {
+        return numOfClients;
     }
 }
