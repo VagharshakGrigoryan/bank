@@ -1,13 +1,13 @@
 package com.company.mod1.domein;
 
 public class Bank {
-    private final Customer[] customer;
-    private int numOfClients;
+    private final Customer[] customer = new Customer[1000];
+    private int numOfClients = 0;
+    private static final Bank myBank = new Bank();
 
-    public Bank() {
-        customer = new Customer[1000];
-        numOfClients = 0;
+    private Bank() {
     }
+
 
     public Customer getCustomer(int customerNumber) {
         if (customerNumber < customer.length) {
@@ -19,5 +19,13 @@ public class Bank {
     public void addCustomer(Customer newCustomer) {
         customer[numOfClients] = newCustomer;
         numOfClients++;
+    }
+
+    public int getNumOfClients() {
+        return numOfClients;
+    }
+
+    public static Bank getBank() {
+        return new Bank();
     }
 }
